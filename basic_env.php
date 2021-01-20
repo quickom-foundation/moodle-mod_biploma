@@ -29,8 +29,8 @@
 //     die;
 // }
 
-$CFG->env_prod = true; // prod
-// $CFG->env_prod = false; // test
+$CFG->biploma_env_prod = true; // prod
+// $CFG->biploma_env_prod = false; // test
 
 define('BPLM_API_URL_PROD', 'api.biploma.com'); // prod
 define('BPLM_API_URL_TEST', 'api-testing.biploma.com'); // test
@@ -39,7 +39,7 @@ define('BPLM_URL_TEST', 'testing.biploma.com'); // test
 
 function get_bplm_api_url($test = null) {
     global $CFG;
-    if (empty($CFG->env_prod) || null !== $test) {
+    if (empty($CFG->biploma_env_prod) || null !== $test) {
         return BPLM_API_URL_TEST;
     }
     return BPLM_API_URL_PROD;
@@ -47,7 +47,7 @@ function get_bplm_api_url($test = null) {
 
 function get_bplm_url($test = null) {
     global $CFG;
-    if (empty($CFG->env_prod) || null !== $test) {
+    if (empty($CFG->biploma_env_prod) || null !== $test) {
         return BPLM_URL_TEST;
     }
     return BPLM_URL_PROD;
