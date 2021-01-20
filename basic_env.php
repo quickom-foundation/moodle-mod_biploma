@@ -29,8 +29,8 @@
 //     die;
 // }
 
-// $CFG->env_prod = true; // prod
-$CFG->env_prod = false; // test
+$CFG->env_prod = true; // prod
+// $CFG->env_prod = false; // test
 
 define('BPLM_API_URL_PROD', 'api.biploma.com'); // prod
 define('BPLM_API_URL_TEST', 'api-testing.biploma.com'); // test

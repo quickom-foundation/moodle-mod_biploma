@@ -16,7 +16,7 @@ This plugin has been tested and is working on Moodle 2.7+ and Moodle 3.1+.
 
 Log into your Moodle site as an administrator.
 
-1. Visit https://github.com/biploma/moodle-mod_biploma and download the zip.
+1. Visit https://github.com/quickom-foundation/moodle-mod_biploma and download the zip.
 2. Go to "Install plugin" via Site administration > Plugins > Install plugins
 3. Click "Install plugin from the Zip file"
 4. Follow the next steps to complete the installation.
@@ -57,11 +57,11 @@ From now on new certificates will be automatically sent to recipients based upon
 
 You are able to add, edit and remove your certificates at any time through the platform.
 
-**Contact us at support@biploma.com if you have issues or ideas on how we can make this integration better.**
+**Contact us at contact@beowulfchain.com if you have issues or ideas on how we can make this integration better.**
 
 ### Bug reports
 
 If you discover any bugs, feel free to create an issue on GitHub. Please add as much information as possible to help us fixing the possible bug. We also encourage you to help even more by forking and sending us a pull request.
 
-https://github.com/biploma/bplm-php-api/issues
+https://github.com/quickom-foundation/moodle-mod_biploma/issues
 
