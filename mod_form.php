@@ -105,13 +105,16 @@ class mod_biploma_mod_form extends moodleform_mod {
             $groups = biploma_get_groups();
             $templates = biploma_get_templates_2();
 
+            $nullitem = ['no_template_selected' => 'Please select a template first'];
+            $templates = array_merge($nullitem, $templates);
+
             $mform->addElement('static', 'usestemplatesdescription', '', get_string('usestemplatesdescription', 'biploma'));
             $mform->addElement('select', 'groupid', get_string('groupname', 'biploma'), $groups);
             $mform->addElement('select', 'templateid', get_string('templatename', 'biploma'), $templates);
             $mform->addRule('groupid', null, 'required', null, 'client');
             $mform->setDefault('groupid', $biploma_certificate->groupid);
             $mform->addRule('templateid', null, 'required', null, 'client');
-            $mform->setDefault('templateid', $biploma_certificate->templateid);
+            $mform->setDefault('templateid', $biploma_certificate->templateid ?? 'no_template_selected');
         }
 
         // Get certificates if updating
