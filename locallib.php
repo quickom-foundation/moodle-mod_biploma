@@ -43,7 +43,7 @@ function sync_course_with_biploma($course, $instance_id = null, $group_id = null
 
     $api = new Api($CFG->biploma_api_key);
 
-    $description = Html2Text\Html2Text::convert($course->summary);
+    $description = strip_tags($course->summary);
     if (empty($description)) {
         $description = "Recipient has compeleted the achievement.";
     }

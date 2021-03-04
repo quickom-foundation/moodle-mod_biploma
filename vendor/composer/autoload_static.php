@@ -6,25 +6,14 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit8d947361c0083b855c1b429cc511cf34
 {
-    public static $prefixLengthsPsr4 = array (
-        'H' => 
-        array (
-            'Html2Text\\' => 10,
-        ),
-    );
-
-    public static $prefixDirsPsr4 = array (
-        'Html2Text\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/soundasleep/html2text/src',
-        ),
+    public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit8d947361c0083b855c1b429cc511cf34::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit8d947361c0083b855c1b429cc511cf34::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit8d947361c0083b855c1b429cc511cf34::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -42,7 +42,7 @@ class mod_biploma_mod_form extends moodleform_mod {
         $updatingcert = false;
         $alreadyexists = false;
 
-        $description = Html2Text\Html2Text::convert($course->summary);
+        $description = strip_tags($course->summary);
         if (empty($description)) {
             $description = "Recipient has compeleted the achievement.";
         }

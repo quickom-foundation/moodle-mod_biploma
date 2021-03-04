@@ -6,7 +6,7 @@
 
 The Biploma platform enables organizations to create, manage and distribute digital credentials as digital certificates.
 
-This plugin enables you to issue dynamic, digital certificates on your Moodle instance. They act as a replacement for the PDF certificates normally generated for your courses.
+This plugin helps businesses and academic institutions instantly issue a person's credentials, including academic degrees, attended courses, acquired skills, training background, diplomas, and other achievements. By leveraging blockchain technology, such data is both tamper-proof and instantly-verifiable to the public, allowing employers to minimize risk of fake, forged certification claims and the need for a third-party background verification.
 
 ## Compatability
 
